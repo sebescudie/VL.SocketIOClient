@@ -9,7 +9,7 @@
     ************************ Connection ************************
 
 -->
-      <Node Name="Connection" Category="VVVV.Network.SocketIO" Bounds="187,299" Id="HS6mTGoSSImLyeAickg7Zo">
+      <Node Name="Connection" Category="Network.SocketIO" Bounds="185,335" Id="HS6mTGoSSImLyeAickg7Zo">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -45,9 +45,9 @@
               <Pin Id="SoQx8ibXgfVQMnscp4AKPV" Name="Input 2" Kind="InputPin" />
               <Pin Id="D4du0f4AdI9Pn3WYMK4c5G" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="EliWb14TxnCM4cGKy8OpAB" Bounds="332,188" />
-            <ControlPoint Id="FFnYKftyctULYtAmuEwwcl" Bounds="443,195" />
-            <ControlPoint Id="KsrVCTpKfH0PgBYKfMTXMR" Bounds="537,195" />
+            <ControlPoint Id="EliWb14TxnCM4cGKy8OpAB" Bounds="331,188" />
+            <ControlPoint Id="FFnYKftyctULYtAmuEwwcl" Bounds="443,188" />
+            <ControlPoint Id="KsrVCTpKfH0PgBYKfMTXMR" Bounds="537,188" />
             <Node Bounds="312,446,88,73" Id="N4oJqFoQAH9NafnQgcP8DX">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -91,7 +91,7 @@
             <Pad Id="UFkuluxI9EKOCtHAZZmUtM" SlotId="PmTF3bIDpR7LryzgwdqW0b" Bounds="281,579" />
             <Pad Id="Jb3EZNfPePXPvj3xt2GTr4" SlotId="PmTF3bIDpR7LryzgwdqW0b" Bounds="281,396" />
             <ControlPoint Id="Mz6GCThlwjNMO9821xfJ8r" Bounds="279,860" />
-            <Node Bounds="330,222,48,13" Id="CJB7MoCX0CVO3xNzrkpUJp">
+            <Node Bounds="329,222,48,13" Id="CJB7MoCX0CVO3xNzrkpUJp">
               <p:NodeReference LastCategoryFullName="IO.Net.IPAddress" LastSymbolSource="VL.CoreLib.IO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="TryParse" />
@@ -133,7 +133,7 @@
               <Pin Id="FqwyNZd8n0GOGxHCp8QA0t" Name="Result" Kind="OutputPin" />
               <Pin Id="J1HnjJB4uheLmvzphZRG2M" Name="Not Assigned" Kind="OutputPin" />
             </Node>
-            <Node Bounds="265,680,134,20" Id="JuMvUisw4s4NVGbkJK0uH7">
+            <Node Bounds="265,680,20,20" Id="JuMvUisw4s4NVGbkJK0uH7">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
@@ -142,7 +142,7 @@
               <Pin Id="PLNYaj2Rp8lQD7raKVWlmx" Name="Input 2" Kind="InputPin" />
               <Pin Id="D6P8v2R67dVPLf3tHwVmse" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="PIQuARCMgp2NtU0XjpTr6W" Bounds="674,195" />
+            <ControlPoint Id="PIQuARCMgp2NtU0XjpTr6W" Bounds="674,188" />
           </Canvas>
           <Patch Id="HgHkcrfIoqmN7ape81kxBZ" Name="Create" />
           <Patch Id="G1HdxGJAJS7MyDsTmCZk3a" Name="Update">
@@ -202,7 +202,7 @@
     ************************ On ************************
 
 -->
-      <Node Name="On" Category="Network.SocketIO" Bounds="581,336" Id="NewLLibk4YCL1RmBT5IFLR">
+      <Node Name="On" Category="Network.SocketIO" Bounds="185,570" Id="NewLLibk4YCL1RmBT5IFLR">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -365,7 +365,7 @@
     ************************ Emit ************************
 
 -->
-      <Node Name="Emit" Category="Network.SocketIO" Bounds="581,299" Id="GiEHgPvCTziMflcdKi4f0U">
+      <Node Name="Emit" Category="Network.SocketIO" Bounds="185,443" Id="GiEHgPvCTziMflcdKi4f0U">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -480,21 +480,12 @@
           <Link Id="BZdbkzvp5KyNCYd8r5kxoz" Ids="FvO95KgxQMkNy1VTlMOq7w,ClxPB3PjykKLr8WRVwKQfK" />
         </Patch>
       </Node>
-      <Pad Id="MMZDvVSXDyQLxnb9Rr3FPZ" Bounds="187,229,183,50" ShowValueBox="true" isIOBox="true" Value="&quot;VVVV Stuff&quot;">
+      <Pad Id="D3aqnCz21vTMFXv0yeuW2R" Bounds="185,216,116,32" ShowValueBox="true" isIOBox="true" Value="&quot;VL Nodes&quot;">
         <p:TypeAnnotation>
           <Choice Kind="TypeFlag" Name="String" />
         </p:TypeAnnotation>
         <p:ValueBoxSettings>
-          <p:fontsize p:Type="Int32">20</p:fontsize>
-          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-        </p:ValueBoxSettings>
-      </Pad>
-      <Pad Id="D3aqnCz21vTMFXv0yeuW2R" Bounds="576,229,168,50" ShowValueBox="true" isIOBox="true" Value="&quot;VL Stuff&quot;">
-        <p:TypeAnnotation>
-          <Choice Kind="TypeFlag" Name="String" />
-        </p:TypeAnnotation>
-        <p:ValueBoxSettings>
-          <p:fontsize p:Type="Int32">21</p:fontsize>
+          <p:fontsize p:Type="Int32">15</p:fontsize>
           <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
         </p:ValueBoxSettings>
       </Pad>
@@ -503,7 +494,7 @@
     ************************ Emit ************************
 
 -->
-      <Node Name="Emit" Category="VVVV.Network.SocketIO.String" Bounds="187,364" Id="BhC8m6U2Tl2PRJhLJwg6SU">
+      <Node Name="Emit" Category="VVVV.Network.SocketIO.String" Bounds="559,443" Id="BhC8m6U2Tl2PRJhLJwg6SU">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -564,7 +555,7 @@
     ************************ Emit ************************
 
 -->
-      <Node Name="Emit" Category="VVVV.Network.SocketIO.Value" Bounds="187,404" Id="Td8twtkyATkPdNQmR9Tj4n">
+      <Node Name="Emit" Category="VVVV.Network.SocketIO.Value" Bounds="559,483" Id="Td8twtkyATkPdNQmR9Tj4n">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -625,7 +616,7 @@
     ************************ On ************************
 
 -->
-      <Node Name="On" Category="VVVV.Network.SocketIO.String" Bounds="185,472" Id="E2xJbAKXqGGMlk7XAXkw19">
+      <Node Name="On" Category="VVVV.Network.SocketIO.String" Bounds="559,570" Id="E2xJbAKXqGGMlk7XAXkw19">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -686,7 +677,7 @@
     ************************ On ************************
 
 -->
-      <Node Name="On" Category="VVVV.Network.SocketIO.Value" Bounds="185,512" Id="RgSluoddeYaOewDsr3gMHe">
+      <Node Name="On" Category="VVVV.Network.SocketIO.Value" Bounds="559,610" Id="RgSluoddeYaOewDsr3gMHe">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -749,6 +740,104 @@
           <Link Id="EiEf2Wr97R1NmVRbcPmjSy" Ids="GZ3r12LZnkMNqvk8JAOudj,V7X5X5sWlOeLWNDrTISxgR" IsHidden="true" />
           <Link Id="Qh5TjMFyHXTPKB3yzfvVHI" Ids="A51xWRxywI0L2DntEzt10p,LKlNGySK15ZNNNbFpbVV3M" />
           <Link Id="JfJ23gGmYEBQJMyXxzxPrJ" Ids="LKlNGySK15ZNNNbFpbVV3M,K8L8UfN6uSMLt5kmev6tmo" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Pad Id="VPEnQ5u7UneLF7iaIfOg83" Bounds="185,385,172,38" ShowValueBox="true" isIOBox="true" Value="&quot;Emits an event to all connected clients.&quot;">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <Pad Id="JLGVCZd3uCUQUc8bkEgrS7" Bounds="185,511,172,38" ShowValueBox="true" isIOBox="true" Value="&quot;Register a new handler for the given event.&quot;">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <Pad Id="Dn0yroh3tveQWl24PH7MOz" Bounds="559,216,177,32" ShowValueBox="true" isIOBox="true" Value="&quot;VVVV Wrapper&quot;">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">15</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <Pad Id="StcbeM2m9fkMqIJ1YSfDZa" Bounds="185,276,172,38" ShowValueBox="true" isIOBox="true" Value="&quot;Connects to a remote socket.io server&quot;">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <!--
+
+    ************************ Connection ************************
+
+-->
+      <Node Name="Connection" Category="VVVV.Network.SocketIO" Bounds="559,335" Id="Nn0gwoBDSQhOT1RR3Ate1v">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="L1DBDXhN9mbPBSdjjjei16">
+          <Canvas Id="V5FP5JtoGIXQJ6n9uRJFAP" CanvasType="Group">
+            <Node Bounds="298,296,78,13" Id="SpO1UOf2VgyLmAIVgUqm0D">
+              <p:NodeReference LastCategoryFullName="Network.SocketIO" LastSymbolSource="VVVV.Network.Socket.IO.NET.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Connection" />
+                <CategoryReference Kind="Category" Name="SocketIO" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Network" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
+                  </p:OuterCategoryReference>
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="Kpp4BndPoDyO7kFuUqflFR" Name="Remote Host" Kind="InputPin" />
+              <Pin Id="J1BWenGqwPvOEtwgn2fQxW" Name="Remote Port" Kind="InputPin" />
+              <Pin Id="E8oEfOVhd8FNCYTyWkkQco" Name="Connect" Kind="InputPin" />
+              <Pin Id="DN4XqprES8AOjxUSX6uhkz" Name="Disconnect" Kind="InputPin" />
+              <Pin Id="NHUcn61M7QGMBRNoo3rdoG" Name="Socket" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="G1QEplThu9IQbHcwUm2cNG" Bounds="195,228" />
+            <ControlPoint Id="VxiN71ipjiLPQKYQ0YZQUT" Bounds="282,228" />
+            <ControlPoint Id="RbnZSJDWWXCMbBdbXWEhsG" Bounds="384,228" />
+            <ControlPoint Id="RuckN0lyfNjP9ipvguJeuR" Bounds="462,228" />
+            <ControlPoint Id="T97s0B6HXfnPC6CDUuoKOl" Bounds="258,368" />
+          </Canvas>
+          <Patch Id="SUpi3VGYrkmNanLmLHZx8Y" Name="Create" />
+          <Patch Id="OyjT72175m5QAC0zLME5vf" Name="Update">
+            <Pin Id="BZaqicCApztNkIH6UiIaSN" Name="Remote Host" Kind="InputPin" Bounds="212,241" />
+            <Pin Id="SJYiT0FtwJwLusdj0d0HvY" Name="Socket" Kind="OutputPin" Bounds="258,368" />
+            <Pin Id="FREWuLqrsyQQcoRcBCrybJ" Name="Remote Port" Kind="InputPin" Bounds="310,239" />
+            <Pin Id="QUvw0GQ5ZzQPxQk7NTOuF5" Name="Connect" Kind="InputPin" Bounds="399,228" />
+            <Pin Id="ThH4ycbzNxWM5fPEK3tPz4" Name="Disconnect" Kind="InputPin" Bounds="477,233" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="AjuOVUoYK8bMZEkgFi2xiN">
+            <Fragment Id="Cwj8A9aTKPRMetRrIMBWN5" Patch="SUpi3VGYrkmNanLmLHZx8Y" Enabled="true" />
+            <Fragment Id="GjO91NCJFmDLeCfKezSyMd" Patch="OyjT72175m5QAC0zLME5vf" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="DaAkfJu2skTNQm6G8rF7MS" Ids="G1QEplThu9IQbHcwUm2cNG,Kpp4BndPoDyO7kFuUqflFR" />
+          <Link Id="GJ4dHwNTjiKPItuy6vYvsq" Ids="BZaqicCApztNkIH6UiIaSN,G1QEplThu9IQbHcwUm2cNG" IsHidden="true" />
+          <Link Id="TJJvqqI1QF1LGc5d2TZLOZ" Ids="VxiN71ipjiLPQKYQ0YZQUT,J1BWenGqwPvOEtwgn2fQxW" />
+          <Link Id="L9kMQ31E3Q1MhbbeS6Kfoh" Ids="FREWuLqrsyQQcoRcBCrybJ,VxiN71ipjiLPQKYQ0YZQUT" IsHidden="true" />
+          <Link Id="AQTW8N06AKQNU6B8lAEW1z" Ids="RbnZSJDWWXCMbBdbXWEhsG,E8oEfOVhd8FNCYTyWkkQco" />
+          <Link Id="C87HO6rYjhLLpj2bAPGS92" Ids="QUvw0GQ5ZzQPxQk7NTOuF5,RbnZSJDWWXCMbBdbXWEhsG" IsHidden="true" />
+          <Link Id="RaqEOILbP4pOBaUzRTjFxU" Ids="RuckN0lyfNjP9ipvguJeuR,DN4XqprES8AOjxUSX6uhkz" />
+          <Link Id="MC555p109Y1OErBzAgfM2H" Ids="ThH4ycbzNxWM5fPEK3tPz4,RuckN0lyfNjP9ipvguJeuR" IsHidden="true" />
+          <Link Id="IgtnRPJhzdRNDZ98w91Aiw" Ids="NHUcn61M7QGMBRNoo3rdoG,T97s0B6HXfnPC6CDUuoKOl" />
+          <Link Id="Uqht8IbpeQIOan508QAfaK" Ids="T97s0B6HXfnPC6CDUuoKOl,SJYiT0FtwJwLusdj0d0HvY" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
