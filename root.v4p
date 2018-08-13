@@ -2,7 +2,7 @@
    <PATCH nodename="D:\Documents\dev\VL.SocketIOClient\root.v4p" scrollx="0" scrolly="-360">
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
-   <BOUNDS type="Window" left="2160" top="6630" width="9780" height="7995">
+   <BOUNDS type="Window" left="6000" top="6480" width="9780" height="7995">
    </BOUNDS>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="6">
    <BOUNDS type="Node" left="165" top="210" width="100" height="100">
@@ -57,7 +57,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5025" top="2700" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="sendMeSomething">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="myEvent">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -89,7 +89,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="3210" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="3" visible="1" values="|hey !|,mes,couilles">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="yo">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -239,12 +239,12 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4860" top="4800">
    </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="51" dstpinname="Event String">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Emit">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
    </LINK>
    <NODE systemname="Emit (Network.SocketIO.Value)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Emit (Network.SocketIO.Value)" componentmode="Hidden" id="52">
    <BOUNDS type="Node" left="7290" top="4800" width="100" height="100">
@@ -261,7 +261,7 @@
    <NODE systemname="Connection (Network.SocketIO)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Connection (Network.SocketIO)" componentmode="Hidden" id="42">
    <BOUNDS type="Node" left="930" top="2070" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Remote Port" slicecount="1" values="8080">
+   <PIN pinname="Remote Port" slicecount="1" values="8000">
    </PIN>
    <PIN pinname="Socket" visible="1">
    </PIN>
@@ -289,5 +289,7 @@
    </LINKPOINT>
    <LINKPOINT x="7290" y="3555">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
    </LINK>
    </PATCH>
