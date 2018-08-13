@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
-   <PATCH nodename="D:\Documents\vvvv\VL\Socket.IO.NET\root.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\Documents\dev\VL.SocketIOClient\root.v4p" scrollx="0" scrolly="-360">
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <BOUNDS type="Window" left="2160" top="6630" width="9780" height="7995">
@@ -30,34 +30,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Connect">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="Emit (Network.SocketIO.String)" filename="D:\Documents\vvvv\VL\Socket.IO.NET\vl\VVVV.Network.Socket.IO.NET.vl" nodename="Emit (Network.SocketIO.String)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="4860" top="4800" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Socket" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Box" left="4860" top="4800">
-   </BOUNDS>
-   <PIN pinname="Event String" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Emit" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Emit (Network.SocketIO.Value)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Emit (Network.SocketIO.Value)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="7290" top="4800" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Socket" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Box" left="7290" top="4800">
-   </BOUNDS>
-   <PIN pinname="Event String" visible="1" slicecount="1" values="myValues">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="2" values="24.39,23.06">
-   </PIN>
-   <PIN pinname="Emit" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
@@ -94,8 +66,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="27" dstpinname="Event String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
    <BOUNDS type="Box" left="5535" top="3765" width="480" height="480">
    </BOUNDS>
@@ -114,8 +84,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Emit">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="34">
    <BOUNDS type="Box" left="5190" top="3210" width="795" height="240">
    </BOUNDS>
@@ -132,8 +100,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="27" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="35">
    <BOUNDS type="Box" left="7440" top="2700" width="795" height="240">
    </BOUNDS>
@@ -148,8 +114,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="35" srcpinname="Output String" dstnodeid="28" dstpinname="Event String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
    <BOUNDS type="Box" left="7650" top="3210" width="840" height="420">
    </BOUNDS>
@@ -166,8 +130,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
    <BOUNDS type="Box" left="7995" top="3765" width="480" height="480">
    </BOUNDS>
@@ -186,46 +148,18 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Emit">
-   </LINK>
-   <NODE systemname="Connection (Network.SocketIO)" filename="D:\Documents\vvvv\VL\Socket.IO.NET\vl\VVVV.Network.Socket.IO.NET.vl" nodename="Connection (SocketIO.Network)" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="930" top="2070" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Remote Port" slicecount="1" values="3000">
-   </PIN>
-   <PIN pinname="Socket" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Connect">
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="27" dstpinname="Socket" linkstyle="Bezier">
-   <LINKPOINT x="990" y="3555">
-   </LINKPOINT>
-   <LINKPOINT x="4860" y="3555">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="28" dstpinname="Socket" linkstyle="Bezier">
-   <LINKPOINT x="990" y="3555">
-   </LINKPOINT>
-   <LINKPOINT x="7290" y="3555">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Disconnect">
-   </LINK>
    <NODE systemname="On (Network.SocketIO.String)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="On (Network.SocketIO.String)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="930" top="4800" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Socket" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Default Value" visible="1" slicecount="1" values="no">
+   <PIN pinname="Default Value" visible="1" slicecount="1" values="nothing">
    </PIN>
    <BOUNDS type="Box" left="930" top="4800">
    </BOUNDS>
    <PIN pinname="Event String" visible="1" slicecount="1" values="stringToClient">
    </PIN>
    </NODE>
-   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="45" dstpinname="Socket">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
    <BOUNDS type="Box" left="1155" top="4335" width="795" height="240">
    </BOUNDS>
@@ -249,17 +183,11 @@
    </PIN>
    <BOUNDS type="Box" left="2850" top="4800">
    </BOUNDS>
-   <PIN pinname="Default Value" visible="1">
+   <PIN pinname="Default Value" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Event String" visible="1">
+   <PIN pinname="Event String" visible="1" slicecount="1" values="valueToClient">
    </PIN>
    </NODE>
-   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="47" dstpinname="Socket" linkstyle="Bezier">
-   <LINKPOINT x="990" y="3563">
-   </LINKPOINT>
-   <LINKPOINT x="2850" y="3563">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
    <BOUNDS type="Box" left="3090" top="4335" width="795" height="240">
    </BOUNDS>
@@ -305,5 +233,61 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="47" dstpinname="Event String">
+   </LINK>
+   <NODE systemname="Emit (Network.SocketIO.String)" filename="D:\Documents\vvvv\VL\Socket.IO.NET\vl\VVVV.Network.Socket.IO.NET.vl" nodename="Emit (Network.SocketIO.String)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="4860" top="4800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4860" top="4800">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="51" dstpinname="Event String">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Emit">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Emit (Network.SocketIO.Value)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Emit (Network.SocketIO.Value)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="7290" top="4800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7290" top="4800">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output String" dstnodeid="52" dstpinname="Event String">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Emit">
+   </LINK>
+   <NODE systemname="Connection (Network.SocketIO)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Connection (Network.SocketIO)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="930" top="2070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Remote Port" slicecount="1" values="8080">
+   </PIN>
+   <PIN pinname="Socket" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Connect">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Disconnect">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="45" dstpinname="Socket">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="47" dstpinname="Socket" linkstyle="Bezier">
+   <LINKPOINT x="990" y="3563">
+   </LINKPOINT>
+   <LINKPOINT x="2850" y="3563">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="51" dstpinname="Socket" linkstyle="Bezier">
+   <LINKPOINT x="990" y="3555">
+   </LINKPOINT>
+   <LINKPOINT x="4860" y="3555">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Socket" dstnodeid="52" dstpinname="Socket" linkstyle="Bezier">
+   <LINKPOINT x="990" y="3555">
+   </LINKPOINT>
+   <LINKPOINT x="7290" y="3555">
+   </LINKPOINT>
    </LINK>
    </PATCH>
