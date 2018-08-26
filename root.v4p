@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10230" top="2160" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="480" top="840" width="6240" height="5085">
+   <BOUNDS type="Window" left="195" top="7800" width="6240" height="5085">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
@@ -115,6 +115,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Disconnect">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Disconnect" linkstyle="Bezier">
    <LINKPOINT x="3195" y="1313">
@@ -204,6 +206,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Emit">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="137" dstpinname="Emit" linkstyle="Bezier">
