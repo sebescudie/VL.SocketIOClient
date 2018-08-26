@@ -2,7 +2,7 @@
    <PATCH nodename="D:\Documents\vvvv\VL\VL.SocketIOClient\root.v4p" scrollx="0" scrolly="-360">
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
-   <BOUNDS type="Window" left="12705" top="4515" width="9720" height="9720">
+   <BOUNDS type="Window" left="12705" top="4515" width="9720" height="9960">
    </BOUNDS>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="6">
    <BOUNDS type="Node" left="6480" top="2160" width="100" height="100">
@@ -335,9 +335,9 @@
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="148">
    <BOUNDS type="Node" left="495" top="7830" width="7320" height="1110">
    </BOUNDS>
-   <BOUNDS type="Box" left="495" top="7830" width="8520" height="1140">
+   <BOUNDS type="Box" left="495" top="7830" width="8550" height="1440">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Known issues : &cr;&lf;&cr;&lf;- Don&apos;t know yet how to get a Connected property for the socket .. the lib does not seem to expose it.&cr;&lf;- Cannot set a custom Socket ID. Samesame, didn&apos;t find how to do that with the lib ..&cr;&lf;- The lib seems to act weird with the Python version of Socket.IO. Will investigate !|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Known issues : &cr;&lf;&cr;&lf;- Don&apos;t know yet how to get a Connected property for the socket .. the lib does not seem to expose it.&cr;&lf;- Cannot set a custom Socket ID. Samesame, didn&apos;t find how to do that with the lib ..&cr;&lf;- The lib seems to act weird with the Python version of Socket.IO. Will investigate !&cr;&lf;- If bang the Connect pin N times, you will end up with N connections to the socket.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
