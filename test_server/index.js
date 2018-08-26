@@ -9,19 +9,14 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
   console.log('player joined');
-  // REFWD CHAT MESSAGE PAYLOAD
-  socket.on('loopback', function(msg){
-    console.log('Received ' + msg + ' from loopback event, refowarding ...');
-    io.emit('loopback', msg);
+  // REFWD MESSAGE PAYLOAD
+  socket.on('sendMeSomething', function(msg){
+    console.log('Received ' + msg + ' from client, refowarding ...');
+    io.emit('serverTalking', msg);
   });
   // DISCONNECT
   socket.on('disconnect', function(){
     console.log('player left');
-  });
-  // TEST MESSAGE
-  socket.on('talkToMe', function(msg){
-    console.log('Server received talkToMe event, emitting serverTalking now ...');
-    io.emit('serverTalking', 'Server talking !');
   });
 });
 
