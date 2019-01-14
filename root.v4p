@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
    <PATCH nodename="D:\Documents\vvvv\VL\VL.SocketIOClient\root.v4p" scrollx="0" scrolly="-360">
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <BOUNDS type="Window" left="12705" top="4515" width="9720" height="9960">
    </BOUNDS>
@@ -62,28 +62,6 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
-   <NODE systemname="Connection (Network.SocketIO)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Connection (Network.SocketIO)" componentmode="Hidden" id="110">
-   <BOUNDS type="Node" left="930" top="1470" width="2025" height="270">
-   </BOUNDS>
-   <PIN pinname="Socket" visible="1">
-   </PIN>
-   <PIN pinname="Disconnect" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Connect">
-   </LINK>
-   <LINK srcnodeid="53" srcpinname="Output String" dstnodeid="110" dstpinname="Remote Host" linkstyle="Bezier">
-   <LINKPOINT x="315" y="1185">
-   </LINKPOINT>
-   <LINKPOINT x="915" y="1185">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Remote Port" linkstyle="Bezier">
-   <LINKPOINT x="1320" y="1193">
-   </LINKPOINT>
-   <LINKPOINT x="1590" y="1193">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="128">
    <BOUNDS type="Node" left="6480" top="240" width="2385" height="1320">
    </BOUNDS>
@@ -118,16 +96,10 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Disconnect" linkstyle="Bezier">
-   <LINKPOINT x="3195" y="1313">
-   </LINKPOINT>
-   <LINKPOINT x="2955" y="1313">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="On (Network.SocketIO.String)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="On (Network.SocketIO.String)" componentmode="Hidden" id="133">
    <BOUNDS type="Node" left="5625" top="4605" width="1680" height="270">
    </BOUNDS>
-   <PIN pinname="Socket" visible="1">
+   <PIN pinname="Socket" visible="1" slicecount="1" values="||">
    </PIN>
    <BOUNDS type="Box" left="5625" top="4605">
    </BOUNDS>
@@ -138,12 +110,6 @@
    <PIN pinname="On Data" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="110" srcpinname="Socket" dstnodeid="133" dstpinname="Socket" linkstyle="Bezier">
-   <LINKPOINT x="990" y="3058">
-   </LINKPOINT>
-   <LINKPOINT x="5625" y="3258">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="135">
    <BOUNDS type="Box" left="1335" top="3450" width="1470" height="240">
    </BOUNDS>
@@ -184,8 +150,6 @@
    <PIN pinname="Emit" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="110" srcpinname="Socket" dstnodeid="137" dstpinname="Socket">
-   </LINK>
    <LINK srcnodeid="135" srcpinname="Output String" dstnodeid="137" dstpinname="Event String">
    </LINK>
    <LINK srcnodeid="136" srcpinname="Output String" dstnodeid="137" dstpinname="Input">
@@ -346,4 +310,40 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Connection (Network.SocketIO IP)" filename="vl\VVVV.Network.Socket.IO.NET.vl" nodename="Connection (Network.SocketIO IP)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="930" top="1470" width="2025" height="270">
+   </BOUNDS>
+   <PIN pinname="Socket" visible="1">
+   </PIN>
+   <PIN pinname="Disconnect" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Connect">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output String" dstnodeid="110" dstpinname="Remote Host" linkstyle="Bezier">
+   <LINKPOINT x="315" y="1185">
+   </LINKPOINT>
+   <LINKPOINT x="915" y="1185">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Remote Port" linkstyle="Bezier">
+   <LINKPOINT x="1320" y="1193">
+   </LINKPOINT>
+   <LINKPOINT x="1590" y="1193">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Disconnect" linkstyle="Bezier">
+   <LINKPOINT x="3195" y="1313">
+   </LINKPOINT>
+   <LINKPOINT x="2955" y="1313">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Socket" dstnodeid="133" dstpinname="Socket" linkstyle="Bezier">
+   <LINKPOINT x="990" y="3058">
+   </LINKPOINT>
+   <LINKPOINT x="5625" y="3258">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Socket" dstnodeid="137" dstpinname="Socket">
+   </LINK>
    </PATCH>
