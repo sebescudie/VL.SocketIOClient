@@ -1,5 +1,7 @@
 # VL.SocketIOClient
 
+**DEPRECATED : see [VL.SocketIO](https://github.com/sebescudie/VL.SocketIO) instead**
+
 _A set of nodes to interact with a [socket.io](https://socket.io) server._
 
 This plugin is still a work in progress !
